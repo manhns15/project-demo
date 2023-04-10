@@ -1,0 +1,8 @@
+.newsletter {
+    margin-top: 140px;
+    &-container {
+        background-color: $blue-background;
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,127 @@
+:root{
+    --primary-color: #fb964b;
+    --text--color: #b7b7b7;
+    --white-color: #ffffff;
+    --black-color: #000;
+ 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: sans;
+    src: url(fonts/GoogleSans-Light.otf);
+}
+@font-face{
+    font-family: sans-bold;
+    src: url(fonts/GoogleSans-Bold.otf);
+}
+body{
+    background-color: #f6f8fc !important;
+
+}
+#app{
+    
+    font-family: sans;
+}
+.login{
+    justify-content: center;
+}
+.section-login{
+    background-color: #fff;
+    width: 305px;
+    height: 100%;
+    margin: 40px 0 0 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 2px rgb(228, 228, 228);
+}
+.login-logo{
+    text-align: center;
+}
+.login-logo img{
+    width: 180px;
+}
+.login-text p{
+    font-size: 25px;
+    font-family: sans-bold;
+    color: var(--primary-color);
+    font-weight: 400;
+   
+}
+.login-user{
+    margin-bottom: 20px;
+}
+.login-user,
+.login-password{
+    display: flex;
+    background-color: #fff;
+    height: 50px;
+    border: 1px solid #d9dde8;
+    border-radius: 3px; 
+    padding: 0 15px;
+}
+.user-icon,
+.show-hide,
+.pw-icon{
+    display: flex;
+}
+
+.form-input{
+    border: none;
+    color: var(--text--color);
+    width: 100%;
+    padding: 0 10px;
+}
+.form-input::placeholder{
+    color: var(--text--color);
+}
+.form-input:focus{
+    outline: none;
+}
+.notify{
+    display: flex;
+    color: var(--text--color);
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.forgot-pw a{
+    color: var(--text--color);
+}
+.forgot-pw a:hover{
+    text-decoration: none;
+}
+
+.submit{
+    
+}
+.submit input{
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: sans-bold;
+    border: none;
+    border-radius: 4px;
+}
+.content-foot{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    color: var(--text--color);}
+.link-text{
+    padding: 0 10px;
+    font-weight: 800;
+    
+}
+.link-text a{
+    color: var(--primary-color);
+}
+.link-text a:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+

@@ -1,0 +1,30 @@
+.header {
+    &-container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 38px;
+    }
+    &-item a {
+        color: $text-color;
+        &::after {
+            content: "";
+            width: 2px;
+            height: 2px;
+            color: $text-primary;
+            z-index: 99;
+        }
+        // &:hover {
+        //     color: $text-primary;
+        //     border-bottom: 2px solid $text-primary;
+        //     transition: all 0.2s linear;
+        // }
+    }
+}

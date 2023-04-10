@@ -1,0 +1,23 @@
+.setting {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 0 25px;
+    }
+    &-item {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+    }
+    &-tag {
+        background-color: #f4f8ec;
+        border-radius: 12px;
+    }
+}

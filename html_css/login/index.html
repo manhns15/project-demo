@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/bootstrap-4.6.0-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid">
+            <div class="row login">
+                <!-- <div class="col-md-4"></div> -->
+                <div class="col-md-4 section-login">
+                    <div class="row">
+                        <div class="col login-logo">
+                            <img src="assets/img/Logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row login-heading">
+                        <div class="col login-text">
+                            <p>Đăng nhập</p>
+                        </div>
+                    </div>
+                    <div class="row login-content">
+                        <div class="col">
+                            <div class="field-set">
+                                <div class="login-user">
+                                    <span class="user-icon">
+                                        <img src="assets/sgv/people.svg" alt="">
+                                    </span>
+                                    <input class="form-input" id="txt-input" type="text" placeholder="Tài khoản">
+                                </div>
+                                <div class="login-password">
+                                    <span class="pw-icon">
+                                        <img src="assets/sgv/lock.svg" alt="">
+                                    </span>
+                                    <input class="form-input pw" type="password" placeholder="Mật khẩu" id="password"
+                                        psswd-shown="false" name="password" required>
+                                    <span type="button" class="show-hide">
+                                        <img src="assets/sgv/eyeon.svg" id="eye" alt="">
+                                        <img src="assets/sgv/eyeoff.svg" hidden id="eyeff" alt="">
+                                    </span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col notify">
+                            <div class="check-login">
+                                <form action="">
+                                    <input type="checkbox" name="">
+                                    <label>Ghi nhớ đăng nhập</label><br>
+                                </form>
+                            </div>
+                            <div class="forgot-pw">
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col submit">
+                            <input type="submit" value="Đăng nhập">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col content-foot">
+                            <div class="ques-text">
+                                <p>Bạn quên tài khoản? </p>
+                            </div>
+                            <div class="link-text">
+                                <a href="">Nhấn vào đây</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4"></div> -->
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="assets/login.js"></script>
+    <script src="assets/bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

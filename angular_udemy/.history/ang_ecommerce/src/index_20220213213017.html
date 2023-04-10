@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngEcommerce</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Admin Start -->
+  <!-- Google Web Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS Font Stylesheet -->
+  <link rel="stylesheet" href="assets/admin/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/admin/css/style.css">
+  <link rel="stylesheet" href="assets/admin/css/custom.css">
+  <!-- Admin End -->
+
+  <!-- Client Start -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"> -->
+
+  <link rel="stylesheet" href="assets/clients/css/templatemo-hexashop.css">
+
+  <link rel="stylesheet" href="assets/clients/css/owl-carousel.css">
+
+  <link rel="stylesheet" href="assets/clients/css/lightbox.css">
+  <!-- Client End -->
+
+
+</head>
+
+<body>
+  <!-- Admin Start -->
+  <app-root></app-root>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/admin/js/main.js"></script>
+  <!-- Admin End -->
+
+  <!-- CLient start -->
+  <!-- jQuery -->
+  <!-- <script src="assets/js/jquery-2.1.0.min.js"></script> -->
+
+  <!-- Bootstrap -->
+  <script src="assets/clients/js/popper.js"></script>
+  <script src="assets/clients/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/clients/js/owl-carousel.js"></script>
+  <script src="assets/clients/js/accordions.js"></script>
+  <script src="assets/clients/js/datepicker.js"></script>
+  <script src="assets/clients/js/scrollreveal.min.js"></script>
+  <script src="assets/clients/js/waypoints.min.js"></script>
+  <script src="assets/clients/js/jquery.counterup.min.js"></script>
+  <script src="assets/clients/js/imgfix.min.js"></script>
+  <script src="assets/clients/js/slick.js"></script>
+  <script src="assets/clients/js/lightbox.js"></script>
+  <script src="assets/clients/js/isotope.js"></script>
+
+  <!-- Global Init -->
+  <script src="assets/clients/js/custom.js"></script>
+
+  <script>
+
+    $(function () {
+      var selectedClass = "";
+      $("p").click(function () {
+        selectedClass = $(this).attr("data-rel");
+        $("#portfolio").fadeTo(50, 0.1);
+        $("#portfolio div").not("." + selectedClass).fadeOut();
+        setTimeout(function () {
+          $("." + selectedClass).fadeIn();
+          $("#portfolio").fadeTo(50, 1);
+        }, 500);
+
+      });
+    });
+
+  </script>
+  <!-- Client End -->
+</body>
+
+</html>

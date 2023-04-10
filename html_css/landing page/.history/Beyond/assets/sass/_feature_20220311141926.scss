@@ -1,0 +1,12 @@
+.feature {
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 87px;
+    }
+    &-image {
+        max-width: 601px;
+    }
+}

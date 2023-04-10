@@ -1,0 +1,56 @@
+.blogs {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 32px;
+    }
+    &-tag {
+        width: 40px;
+        height: 18px;
+        margin-left: 24px;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f8ec;
+        color: $green-color;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 12px;
+    }
+
+    &-item {
+        max-width: 569px;
+    }
+    &-content {
+        padding: 43px 24px 24px 24px;
+        margin-top: 194px;
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    &-heading {
+        max-width: 380px;
+        margin-bottom: 8px;
+    }
+    &-heading h3 {
+        font-size: 22px;
+        line-height: calc(33 / 22);
+        color: $while-color;
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+        color: $while-color;
+    }
+    &-info span {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &-name {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+    }
+}

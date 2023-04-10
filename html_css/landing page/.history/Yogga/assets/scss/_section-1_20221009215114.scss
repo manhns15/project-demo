@@ -1,0 +1,12 @@
+.section-1 {
+    background-color: $color-2;
+    color: #fff;
+}
+
+.header {
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

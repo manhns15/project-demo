@@ -1,0 +1,9 @@
+.footer {
+    &-container {
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+        gap: 0 200;
+    }
+}

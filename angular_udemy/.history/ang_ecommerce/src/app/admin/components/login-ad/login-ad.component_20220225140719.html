@@ -1,0 +1,34 @@
+<div class="container-xxl position-relative bg-white d-flex p-0">
+
+  <!-- Sign In Start -->
+  <div class="container-fluid">
+    <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <div class="bg-light p-4 p-sm-5 my-4 mx-3 custom-login">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <span>
+              <img src="/assets/clients/images/logo_nike1.png" class="w-50" alt="">
+            </span>
+            <h3>Sign In</h3>
+          </div>
+          <form action="" [formGroup]="loginForm" (ngSubmit)="submitForm()">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control custom-form" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="password" class="form-control custom-form" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <p class="text-center mb-4">Don't have an Account?
+              <a class="text-secondary" routerLink="/register-ad">Sign Up</a>
+            </p>
+            <button type="submit" class="btn btn-dark py-3 w-100 custom-form">Sign In</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign In End -->
+</div>

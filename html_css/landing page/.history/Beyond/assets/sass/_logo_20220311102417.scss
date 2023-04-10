@@ -1,0 +1,9 @@
+.logo {
+    background-color: $blue-background;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 86px 75px 86px;
+    }
+}

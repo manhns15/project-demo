@@ -1,0 +1,13 @@
+.newsletter {
+    margin-top: 140px;
+    &-container {
+        background-color: $blue-background;
+        display: flex;
+        align-items: center;
+        border-radius: 67px;
+        gap: 0 19px;
+    }
+    &-content {
+        max-width: 404px;
+    }
+}

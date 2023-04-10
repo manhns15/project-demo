@@ -1,0 +1,43 @@
+.image {
+    &-container {
+        padding: 48px 0;
+    }
+    &-content {
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        padding: 32px 0;
+    }
+    &-info {
+        max-width: 769px;
+        padding-top: 216px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 0 32px;
+        color: $while-color;
+    }
+    &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 12px 0;
+    }
+    &-title,
+    &-category,
+    &-author {
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0 32px;
+    }
+    &-category span:nth-child(2),
+    &-author span:nth-child(2) {
+        text-decoration: underline;
+    }
+    &-heading {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: calc(44.8 / 32);
+    }
+}

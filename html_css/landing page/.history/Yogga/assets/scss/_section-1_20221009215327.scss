@@ -1,0 +1,18 @@
+.section-1 {
+    background-color: $color-2;
+    color: #fff;
+}
+
+.header {
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--left span {
+            font-size: 24px;
+            font-weight: 500;
+
+        }
+    }
+}

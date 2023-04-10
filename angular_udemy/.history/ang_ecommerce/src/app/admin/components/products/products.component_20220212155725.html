@@ -1,0 +1,71 @@
+<div class="container-fluid pt-4 px-4">
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editorProduct">
+        <i class="bi bi-plus-circle"></i> New product
+      </button>
+    </div>
+    <div class="col-md-6">
+      <select class="form-select mb-3" aria-label="Default select example">
+        <option selected>Open this select categories</option>
+        <option value="{{item}}" *ngFor="let item of categories">{{item}}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Modal editor product start -->
+  <div class="modal fade" id="editorProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal editor product end -->
+  <div class="bg-light rounded h-100 p-4">
+    <h6 class="mb-4">Products</h6>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Image</th>
+          <th scope="col">Price</th>
+          <th scope="col">Category</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of products, let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td><a routerLink="" class="text-decoration-none custom-text">{{item.title}}</a></td>
+          <td><img [src]="item.image" alt="" srcset="" class="w-25"></td>
+          <td>{{item.price}}$</td>
+          <td>{{item.category}}</td>
+          <td class="">
+            <a class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

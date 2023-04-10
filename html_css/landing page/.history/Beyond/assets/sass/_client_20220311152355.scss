@@ -1,0 +1,14 @@
+.client {
+    &-container {
+        margin-top: 140px;
+        display: flex;
+        align-items: center;
+        gap: 0 208px;
+    }
+    &-image {
+        max-width: 523px;
+    }
+    &-content {
+        max-width: 399px;
+    }
+}

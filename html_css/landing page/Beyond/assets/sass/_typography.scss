@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black-color;
+}
+.heading {
+    font-size: 40px;
+    color: $black-color;
+    line-height: calc(50 / 40);
+    font-weight: 700px;
+}
+.text {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+}
+.title {
+    color: $text-primary;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}

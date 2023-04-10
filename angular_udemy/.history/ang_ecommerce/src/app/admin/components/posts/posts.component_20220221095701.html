@@ -1,0 +1,86 @@
+<div class="container-fluid pt-4 px-4">
+  <button type="button" class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#editorPost">
+    <i class="bi bi-plus-circle"></i> New Posts
+  </button>
+
+  <!-- Modal editor product start -->
+  <div class="modal fade" id="editorPost" tabindex="-1" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-scroll__custom">
+          <form [formGroup]="form">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Slug</label>
+              <input type="text" class="form-control" id="" appSlugPost formControlName="slug">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Title</label>
+              <input type="text" class="form-control" id="" formControlName="title">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Image</label>
+              <input type="text" class="form-control" id="" formControlName="image">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Body</label>
+              <input type="number" class="form-control" id="" formControlName="body">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Description</label>
+              <textarea class="form-control" id="" rows="6" formControlName="description"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Tags</label>
+              <input type="number" class="form-control" id="" formControlName="tagList">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal editor product end -->
+
+  <div class="bg-light rounded h-100 p-4">
+    <h6 class="mb-4">Posts</h6>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Slug</th>
+          <th scope="col">Tags</th>
+          <th scope="col">Created at</th>
+          <th scope="">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of posts, let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td><a routerLink="" class="custom-text text-decoration-none text-secondary">{{item.slug}}</a></td>
+          <td class="tagList">
+            <div class="tags">
+              <span class="tag-item" *ngFor="let tag of item.tagList"><i class="bi bi-tags"></i> {{tag}}</span>
+            </div>
+          </td>
+          <td>{{item.createdAt| date: 'H:mm:ss a'}}</td>
+          <td>
+            <div class="d-flex">
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editorProduct">
+                <i class="bi bi-pencil-square"></i>
+              </button> &nbsp;
+              <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

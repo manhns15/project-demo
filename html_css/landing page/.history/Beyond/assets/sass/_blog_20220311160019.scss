@@ -1,0 +1,44 @@
+.blog {
+    &-container {
+    }
+    &-content {
+        margin: 0 auto;
+        max-width: 606px;
+        text-align: center;
+    }
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-card {
+        margin-top: 78px;
+        display: flex;
+        align-items: center;
+        gap: 0 34px;
+    }
+    &-item {
+        max-width: 354px;
+        cursor: pointer;
+        &--content {
+            max-width: 316px;
+            padding-left: 23px;
+            margin-bottom: 35px;
+        }
+        &--title {
+            margin-top: 33px;
+        }
+        &--text {
+            margin-top: 9px;
+            font-size: 13px;
+            color: #6d7f94;
+            line-height: calc(20 / 13);
+        }
+        &:hover {
+            background: #ffffff;
+            box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
+            border-radius: 17px;
+            &--title:hover {
+                color: $text-primary;
+            }
+        }
+    }
+}

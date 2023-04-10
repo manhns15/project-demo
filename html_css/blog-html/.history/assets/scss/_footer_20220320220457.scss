@@ -1,0 +1,45 @@
+.footer {
+    &-container {
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0 200px;
+    }
+    &-heading {
+        margin-bottom: 16px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+    }
+    &-item {
+        margin-bottom: 16px;
+        list-style: none;
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: calc(19 / 14);
+        color: $green-color;
+    }
+    &-tag {
+        margin-top: 48px;
+
+        & h4 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        &--item {
+            & span {
+                height: 18px;
+                background-color: $gray-background-color;
+                color: $green-color;
+                font-weight: 600;
+                border-radius: 12px;
+            }
+        }
+    }
+}

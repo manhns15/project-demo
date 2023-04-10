@@ -1,0 +1,14 @@
+.footer {
+    background-color: $black-color;
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 0 213px;
+    }
+    &-left {
+        max-width: 235px;
+        & img {
+            margin-bottom: 21px;
+        }
+    }
+}

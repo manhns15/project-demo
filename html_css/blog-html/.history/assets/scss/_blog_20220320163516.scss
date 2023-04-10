@@ -1,0 +1,19 @@
+.blogs {
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+    &-item {
+        width: 569px;
+        //
+    }
+    &-content {
+        margin-top: 194px;
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    &-heading {
+        width: 380px;
+        margin-top: 43px;
+        margin-left: 24px;
+    }
+}

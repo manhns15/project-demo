@@ -1,0 +1,41 @@
+.post {
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 0 32px;
+        padding-top: 48px;
+    }
+    &-sidebar {
+        width: 269px;
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        padding: 0;
+    }
+    &-archives,
+    &-category,
+    &-contact {
+        margin-bottom: 48px;
+        & h4 {
+            margin-bottom: 16px;
+        }
+        & li {
+            list-style: none;
+            font-size: 14px;
+            line-height: calc(19.07 / 14);
+            font-weight: 400;
+            margin-bottom: 12px;
+            & a {
+                text-decoration: underline;
+                color: $green-color;
+            }
+        }
+    }
+    &-contact {
+        & p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: calc(19 / 14);
+        }
+    }
+}

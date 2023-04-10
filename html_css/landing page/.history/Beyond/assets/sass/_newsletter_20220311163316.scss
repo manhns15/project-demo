@@ -1,0 +1,35 @@
+.newsletter {
+    margin-top: 140px;
+    &-container {
+        background-color: $blue-background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 67px;
+        gap: 0 19px;
+    }
+    &-content {
+        padding: 77px 0 116px 0;
+        max-width: 404px;
+    }
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-email {
+        width: 373px;
+        height: 53px;
+        background: #ffffff;
+        border-radius: 100rem;
+        & input {
+            padding-left: 20px;
+            width: 373px;
+            height: 53px;
+            padding: 10px 0 10px 21px;
+            float: left;
+            border: 0;
+            background: #fff;
+            border-radius: 100rem;
+            border-top-style: none;
+        }
+    }
+}

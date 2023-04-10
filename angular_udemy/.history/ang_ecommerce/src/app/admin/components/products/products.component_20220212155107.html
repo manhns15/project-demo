@@ -1,0 +1,40 @@
+<div class="container-fluid pt-4 px-4">
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-secondary">Create new Product</button>
+    </div>
+    <div class="col-md-6">
+      <select class="form-select mb-3" aria-label="Default select example">
+        <option selected>Open this select categories</option>
+        <option value="{{item}}" *ngFor="let item of categories">{{item}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="bg-light rounded h-100 p-4">
+    <h6 class="mb-4">Products</h6>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Image</th>
+          <th scope="col">Price</th>
+          <th scope="col">Category</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of products, let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td><a routerLink="" class="text-decoration-none custom-text">{{item.title}}</a></td>
+          <td><img [src]="item.image" alt="" srcset="" class="w-25"></td>
+          <td>{{item.price}}$</td>
+          <td>{{item.category}}</td>
+          <td class="">
+            <a class="btn btn-primary"><i class="bi bi-pencil-square"></i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

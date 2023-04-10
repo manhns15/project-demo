@@ -1,0 +1,13 @@
+.detail {
+    &-container {
+        margin-top: 48px;
+    }
+    &-sidebar {
+        width: 169px;
+    }
+    &-tags {
+        height: 103px;
+        & h4 {
+        }
+    }
+}

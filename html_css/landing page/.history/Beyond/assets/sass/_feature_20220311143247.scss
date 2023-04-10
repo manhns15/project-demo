@@ -1,0 +1,22 @@
+.feature {
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 0 87px;
+    }
+    &-image {
+        max-width: 601px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-20%, -16%);
+    }
+    &-content {
+        max-width: 502px;
+        margin-top: 84px;
+        margin-bottom: 37px;
+    }
+}

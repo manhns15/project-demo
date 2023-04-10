@@ -1,0 +1,67 @@
+.detail {
+    &-container {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0 32px;
+    }
+
+    &-sidebar {
+        width: 169px;
+    }
+    &-tags {
+        height: 103px;
+        & h4 {
+            margin-bottom: 16px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    &-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 8px;
+    }
+    &-back {
+        display: flex;
+        flex-direction: row;
+        gap: 0 10px;
+        & a {
+            color: $text-color;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+    &-content {
+        width: 569px;
+    }
+    &-title {
+        margin-bottom: 12px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &-body {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: calc(23.15 / 17);
+    }
+    &-shares {
+        margin-top: 48px;
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+    }
+    &-icon {
+        & button {
+            width: auto;
+            height: 36px;
+            padding: 6px 12px;
+            background: #f5f5f5;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+}

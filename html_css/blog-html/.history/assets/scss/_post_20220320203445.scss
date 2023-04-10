@@ -1,0 +1,18 @@
+.post {
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 0 32px;
+        padding-top: 48px;
+    }
+    &-sidebar {
+        max-width: 269px;
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        padding: 0;
+    }
+    &-archives {
+        margin-bottom: 48px;
+    }
+}

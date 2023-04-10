@@ -1,0 +1,16 @@
+.blogs {
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+    &-item {
+        max-width: 569px;
+    }
+    &-content {
+        margin-top: 194px;
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    &-heading {
+        max-width: 380px;
+    }
+}

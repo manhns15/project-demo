@@ -1,0 +1,28 @@
+<div class="auth-client">
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form class="register-client">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <a routerLink="/">
+        <img src="/assets/clients/images/logo_nike1.png" class="w-50" alt="">
+      </a>
+      <h3>Register</h3>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control custom-form" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating mb-4">
+      <input type="password" class="form-control custom-form" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <p class="text-center mb-4">Don't have an Account?
+      <a class="text-secondary" routerLink="/login">Login</a>
+    </p>
+    <button type="submit" class="btn btn-dark py-3 w-100 custom-form">Register</button>
+  </form>
+</div>

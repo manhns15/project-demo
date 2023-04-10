@@ -1,0 +1,38 @@
+.section-1 {
+    background-color: $color-2;
+    color: #fff;
+}
+
+.header {
+    padding: 35px 0;
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--left span {
+            font-size: 24px;
+            font-weight: 600;
+
+        }
+
+        &--mid {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 0 42px;
+
+                li {
+                    list-style: none;
+                    font-size: 20px;
+                    font-weight: 400;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.post {
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 0 32px;
+        padding-top: 48px;
+    }
+    &-sidebar {
+        max-width: 269px;
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        padding: 0;
+    }
+    &-archives {
+        margin-bottom: 48px;
+        & h4 {
+            margin-bottom: 16px;
+        }
+        & li {
+            list-style: none;
+            font-size: 14px;
+            line-height: calc(19.07 / 14);
+            font-weight: 400px;
+            & a {
+                text-decoration: line-through;
+            }
+        }
+    }
+}

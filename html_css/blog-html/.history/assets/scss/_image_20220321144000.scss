@@ -1,0 +1,12 @@
+.image {
+    &-container {
+    }
+    &-content {
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        padding: 32px 0;
+    }
+    &-info {
+        max-width: 769px;
+        margin: 0 auto;
+    }
+}

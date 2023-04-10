@@ -1,0 +1,14 @@
+<section class="section-a">
+  <div class="container">
+    <div class="sub-product">
+      <h6 class="my-3">{{product.category | titlecase}}</h6>
+      <h2>{{product.title}}</h2>
+      <h4 class="my-2 text-danger">{{product.price}}$</h4>
+      <p>{{product.description}}</p>
+
+    </div>
+    <div class="img-product">
+      <img [src]="product.image" class="w-50" alt="" />
+    </div>
+  </div>
+</section>

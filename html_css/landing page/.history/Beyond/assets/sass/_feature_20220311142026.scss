@@ -1,0 +1,16 @@
+.feature {
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 87px;
+    }
+    &-image {
+        max-width: 601px;
+        position: absolute;
+        top: 38.8%;
+        left: 0;
+        transform: translate(19.5%, -50%);
+    }
+}

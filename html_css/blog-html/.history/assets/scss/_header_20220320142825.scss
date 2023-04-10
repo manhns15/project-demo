@@ -1,0 +1,18 @@
+.header {
+    &-container {
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+    &-infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--item {
+            list-style: none;
+        }
+    }
+}

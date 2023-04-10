@@ -1,0 +1,29 @@
+.feature {
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 0 87px;
+    }
+    &-image {
+        max-width: 601px;
+        position: absolute;
+        top: 15%;
+        left: 0;
+        transform: translate(-20.3%, -16.1%);
+    }
+    &-content {
+        max-width: 502px;
+        margin-top: 84px;
+        margin-bottom: 37px;
+    }
+    &-title,
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-button {
+        margin-bottom: 37px;
+    }
+}

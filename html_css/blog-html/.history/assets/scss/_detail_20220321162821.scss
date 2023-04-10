@@ -1,0 +1,24 @@
+.detail {
+    &-container {
+        margin-top: 48px;
+    }
+    &-sidebar {
+        width: 169px;
+    }
+    &-tags {
+        height: 103px;
+        & h4 {
+            margin-bottom: 16px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    &-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 8px;
+    }
+    &-back {
+    }
+}

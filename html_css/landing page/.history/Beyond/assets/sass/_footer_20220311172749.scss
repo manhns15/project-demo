@@ -1,0 +1,41 @@
+.footer {
+    background-color: $black-color;
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 0 213px;
+    }
+    &-left {
+        max-width: 235px;
+        & img {
+            margin-bottom: 21px;
+        }
+        &--text {
+            font-size: 14px;
+            line-height: calc(21 / 14);
+            color: #afaccd;
+        }
+    }
+    &-right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 73px;
+        &--column {
+            max-width: 178px;
+        }
+        &--heading {
+            color: #d9e1f0;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        &--item {
+            list-style-type: none;
+            line-height: calc(37 / 14);
+        }
+        &--link {
+            color: #afaccd;
+            font-size: 14px;
+        }
+    }
+}

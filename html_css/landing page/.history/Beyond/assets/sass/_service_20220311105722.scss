@@ -1,0 +1,33 @@
+.service {
+    &-container {
+    }
+    &-content {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 619px;
+    }
+    &-title {
+        margin-bottom: 25px;
+    }
+    &-heading {
+        padding: 0 55px;
+        margin-bottom: 32px;
+    }
+    &-text {
+        margin-bottom: 73px;
+    }
+    &-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 33px;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &-icon {
+        padding-top: 40px 0 26px 0;
+    }
+}

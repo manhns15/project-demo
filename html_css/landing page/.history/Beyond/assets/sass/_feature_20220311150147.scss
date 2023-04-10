@@ -1,0 +1,46 @@
+.feature {
+    margin-bottom: 112px;
+    &-container {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 0 87px;
+    }
+    &-image {
+        max-width: 601px;
+        position: absolute;
+        top: 15%;
+        left: 0;
+        transform: translate(-20.3%, -16.1%);
+    }
+    &-content {
+        max-width: 502px;
+        margin-top: 84px;
+        margin-bottom: 37px;
+    }
+    &-title,
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-button {
+        margin-top: 37px;
+        margin-bottom: 62px;
+    }
+}
+.feature2 {
+    background-color: $blue-background;
+    &-container {
+        display: flex;
+        align-items: center;
+        gap: 0 26px;
+    }
+    &-content {
+        max-width: 502px;
+        padding-top: 117px;
+    }
+    &-image {
+        max-width: 602px;
+        padding-top: 192px;
+    }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1098px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: $font;
+    font-weight: 500;
+    line-height: 1;
+    color: $text-color;
+    background-color: #fff;
+}
+button {
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}

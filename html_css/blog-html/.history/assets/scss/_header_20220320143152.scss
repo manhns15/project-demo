@@ -1,0 +1,31 @@
+.header {
+    &-container {
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+    &-infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 33px;
+        &--item {
+            list-style: none;
+        }
+        &--item a {
+            font-size: 12px;
+            color: $text-color;
+            &:hover {
+                color: $gray-color;
+            }
+        }
+    }
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

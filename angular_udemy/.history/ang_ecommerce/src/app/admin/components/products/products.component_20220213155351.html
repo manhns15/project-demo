@@ -1,0 +1,98 @@
+<div class="container-fluid pt-4 px-4">
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#editorProduct">
+        <i class="bi bi-plus-circle"></i> New product
+      </button>
+    </div>
+    <div class="col-md-6">
+      <select class="form-select mb-3" aria-label="Default select example">
+        <option selected>Open this select categories</option>
+        <option value="{{item}}" *ngFor="let item of categories">{{item}}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Modal editor product start -->
+  <div class="modal fade" id="editorProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="form">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name</label>
+              <input type="text" class="form-control" formControlName="name" id="">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Image</label>
+              <input type="text" class="form-control" formControlName="image" id="">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Price</label>
+              <input type="number" class="form-control" formControlName="price" id="">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Quantity</label>
+              <input type="number" class="form-control" formControlName="quantity" id="">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Categories</label>
+              <select class="form-select mb-3" aria-label="Default select example" formControlName="category">
+                <option selected>Open this select categories</option>
+                <option value="{{item}}" *ngFor="let item of categories">{{item}}</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Description</label>
+              <textarea class="form-control" id="" formControlName="description"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)="onAddProduct()" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal editor product end -->
+
+
+  <div class="bg-light rounded h-100 p-4">
+    <h6 class="mb-4">Products</h6>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Image</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price</th>
+          <th scope="">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of products, let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td><a routerLink="{{item.id}}" class="custom-text text-decoration-none">{{item.name}}</a></td>
+          <td><img [src]="item.image" alt="" srcset="" class="w-25"></td>
+          <td class="text-center">{{item.quantity}}</td>
+          <td>{{item.price | currency: 'VND'}}</td>
+          <td>
+            <div class="d-flex">
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editorProduct"
+                (click)="subPro(item.id)">
+                <i class="bi bi-pencil-square"></i>
+              </button> &nbsp;
+              <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.header {
+    &-container {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 38px;
+    }
+    &-item a {
+        color: $text-color;
+        position: relative;
+        &:hover::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $text-primary;
+        }
+        &:hover {
+            color: $text-primary;
+        }
+    }
+    &-auth {
+        display: flex;
+        align-items: center;
+        gap: 0 13px;
+    }
+    &-content {
+        max-width: 496px;
+    }
+    &-title {
+        color: $text-primary;
+        font-size: 13px;
+        padding-bottom: 18px;
+    }
+}

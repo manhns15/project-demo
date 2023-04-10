@@ -1,0 +1,109 @@
+.section-1 {
+    background-color: $color-2;
+    color: #fff;
+}
+
+.header {
+    padding-top: 35px;
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--left span {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &--mid {
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 0 42px;
+
+                li {
+                    list-style: none;
+                    font-size: 20px;
+                    font-weight: 300;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            button {
+                width: 181px;
+                height: 62px;
+                border-radius: 20px;
+                background-color: $color-1;
+                text-transform: capitalize;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        gap: 0 18px;
+
+        &--left {
+            max-width: 570px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-weight: 600;
+                font-size: 60px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 20px;
+                margin-bottom: 45px;
+            }
+
+            &_btn {
+                display: flex;
+                flex-direction: row;
+                gap: 0 30px;
+            }
+        }
+
+        &--right {
+            max-width: 595px;
+            position: relative;
+
+            &_bg {
+
+                position: relative;
+                background-color: $color-1;
+                width: 427px;
+                height: 491px;
+                border-radius: 20px;
+                left: 80px;
+                top: 64px;
+            }
+
+            &_image {
+                position: absolute;
+                top: 0;
+            }
+
+            &_card1 {
+                background-color: #fff;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}

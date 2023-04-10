@@ -1,0 +1,13 @@
+.footer {
+    &-container {
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0 200px;
+    }
+    &-heading {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,16 @@
+.header {
+    &-container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 38px;
+        color: $text-color;
+    }
+}

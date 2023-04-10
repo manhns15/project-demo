@@ -1,0 +1,80 @@
+$font: "Poppins";
+$color-1: #FF652E;
+$color-2: #155261;
+$color-3: #0A414E;
+$gray-color: ##79838C;
+
+html {
+    box-sizing: border-box;
+    font-family: $font;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    height: 58px;
+    padding: 0 33px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+.btn-color1 {
+    background-color: $color-1;
+
+}
+
+.btn-outline {
+    background-color: #ff662e00;
+    border: 1px solid $color-1;
+    color: $color-1;
+}

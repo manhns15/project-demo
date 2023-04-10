@@ -1,0 +1,34 @@
+.client {
+    &-container {
+        margin-top: 140px;
+        display: flex;
+        align-items: center;
+        gap: 0 208px;
+    }
+    &-image {
+        max-width: 523px;
+    }
+    &-content {
+        max-width: 399px;
+        margin: 41px 63px 0 0;
+    }
+    &-title {
+        margin-bottom: 11px;
+    }
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-text {
+        margin-bottom: 19px;
+    }
+    &-point {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+    &-point span :nth-child(0) {
+        font-size: 25px;
+        color: $text-primary;
+        font-weight: 600;
+    }
+}

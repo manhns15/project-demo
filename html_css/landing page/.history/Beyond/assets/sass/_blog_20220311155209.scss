@@ -1,0 +1,26 @@
+.blog {
+    &-container {
+    }
+    &-content {
+        margin: 0 auto;
+        max-width: 606px;
+        text-align: center;
+    }
+    &-heading {
+        margin-bottom: 25px;
+    }
+    &-card {
+        margin-top: 78px;
+    }
+    &-item {
+        max-width: 354px;
+        &--title {
+            margin-top: 33px;
+            padding-left: 23px;
+        }
+        &--text {
+            margin-top: 9px;
+            padding-left: 23px;
+        }
+    }
+}

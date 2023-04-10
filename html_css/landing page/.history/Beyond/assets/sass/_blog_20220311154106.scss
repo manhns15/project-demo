@@ -1,0 +1,12 @@
+.blog {
+    &-container {
+    }
+    &-content {
+        margin: 0 auto;
+        max-width: 606px;
+        text-align: center;
+    }
+    &-heading {
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,9 @@
+.blogs {
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+    &-item {
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}

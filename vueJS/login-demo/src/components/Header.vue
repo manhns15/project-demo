@@ -1,0 +1,51 @@
+<template>
+  <header class="header">
+    <div class="container">
+      <div class="header-container">
+        <div class="header-logo">
+          <img srcset="../assets/images/logo.png 2x" alt="" />
+        </div>
+        <div class="header-menu">
+          <ul class="header-list">
+            <li class="header-item"><a href="#" class="is-active">Home</a></li>
+            <li class="header-item"><a href="#">Why us?</a></li>
+            <li class="header-item"><a href="#">Freatures</a></li>
+            <li class="header-item"><a href="#">Pricing</a></li>
+            <li class="header-item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="header-auth">
+          <a href="#" class="button button--outline header-login">Login</a>
+          <a href="#" class="button button--primary header-signup">Sign Up</a>
+        </div>
+      </div>
+      <div class="header-detail">
+        <div class="header-content">
+          <p class="header-title">AWARD WINNING COMPANY</p>
+          <h1 class="header-heading">We Are The Best Digital Markeing</h1>
+          <p class="header-text">
+            You need to get positive results when you spend hard earned revenue
+            and time on any marketing effort. Great returns on marketing and
+            promotions.
+          </p>
+          <div class="header-media">
+            <a href="#" class="button button--primary">Get Started</a>
+            <a href="#" class="header-play"
+              ><img src="../assets/images/play.svg" alt=""
+            /></a>
+            <a href="#" class="header-link">Watch Video</a>
+          </div>
+        </div>
+        <div class="header-image">
+          <img srcset="../assets/images/Card-&-Content.png 2x" alt="" />
+        </div>
+      </div>
+    </div>
+  </header>
+</template>
+<script>
+export default {
+  name: "Header",
+  components: {},
+};
+</script>
