@@ -1,0 +1,154 @@
+<section>
+  <div class="gray-bg">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row merged20" id="page-contents">
+          <div class="col-lg-12">
+            <div class="loadMore" *ngFor="let article of articles?.articles">
+              <div class="central-meta item">
+                <div class="user-post job">
+                  <div class="friend-info">
+                    <figure
+                      [routerLink]="['/profile', article.author.username]"
+                    >
+                      <img [src]="article.author.image" style="height: 40px; width: 40px; border-radius: 50%"/>
+                    </figure>
+                    <div class="friend-name">
+                      <div class="more">
+                        <div class="more-post-optns">
+                          <i class="ti-more-alt"></i>
+                          <ul>
+                            <li
+                              style="font-size: 13px"
+                              [routerLink]="[
+                                '/profile',
+                                article.author.username
+                              ]"
+                            >
+                              <i class="fa fa-pencil-square-o"></i>Profile Post
+                            </li>
+                            <li
+                              style="font-size: 13px"
+                              [routerLink]="['/article', article.slug]"
+                            >
+                              <i class="fas fa-list"></i>Detail Post
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ins
+                        ><a
+                          style="font-weight: 600"
+                          [routerLink]="['/profile', article.author.username]"
+                        >
+                          {{ article.author.username }}</a
+                        >
+                      </ins>
+                      <p>
+                        {{ article.createdAt | date: "longDate" }}
+                      </p>
+                    </div>
+                    <div class="post-meta mt-3">
+                      <h6>
+                        <a
+                          style="font-weight: 600"
+                          [routerLink]="['/article', article.slug]"
+                          >{{ article.title }}</a
+                        >
+                      </h6>
+
+                      <div class="description">
+                        <p>
+                          {{ article.description | titlecase }}
+                        </p>
+                      </div>
+                      <div class="rate-n-apply">
+                        <div
+                          class="row"
+                          style="
+                            border-bottom: 1px solid #80808017;
+                            padding-bottom: 11px;
+                          "
+                        >
+                          <div class="col-lg-10">
+                            <div class="loc-cate">
+                              <div
+                                class="job-tgs"
+                                style="
+                                  height: 3.6rem;
+                                  overflow: hidden;
+                                  display: -webkit-box;
+                                  -webkit-box-orient: vertical;
+                                  -webkit-line-clamp: 2;
+                                "
+                              >
+                                <a
+                                  [routerLink]="['/article', article.slug]"
+                                  class="tag"
+                                  style="margin-right: 10px"
+                                  *ngFor="let tag of article.tagList"
+                                  ><i class="fa fa-map-marker"></i> {{ tag }}
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-2">
+                            <a
+                              class="main-btn"
+                              [routerLink]="['/article', article.slug]"
+                              >Read more...</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="we-video-info">
+                        <ul>
+                          <li>
+                            <app-favorited [article]="article"></app-favorited>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav
+              aria-label="Page navigation example"
+              *ngIf="this.articles.articlesCount > 20"
+            >
+              <ul class="pagination">
+                <li
+                  class="pageNumber"
+                  (click)="previousPage()"
+                  [ngClass]="skip == 0 ? 'disabled' : ''"
+                >
+                  <a class="pageNumber" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li
+                  class="pageNumber"
+                  *ngFor="let page of totalPage; let i = index"
+                  [ngClass]="index == i ? 'active' : ''"
+                  (click)="changePage(i)"
+                >
+                  <a class="pageNumber">{{ i + 1 }}</a>
+                </li>
+                <li
+                  class="pageNumber"
+                  [ngClass]="skip >= length - top ? 'disabled' : ''"
+                  (click)="nextPage()"
+                >
+                  <a class="pageNumber" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

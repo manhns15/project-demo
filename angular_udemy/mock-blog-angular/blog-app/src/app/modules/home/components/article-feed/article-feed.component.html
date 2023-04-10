@@ -1,0 +1,81 @@
+<div class="central-meta postbox mt-0">
+  <div class="new-postbox">
+    <div class="row">
+      <div class="col-lg-9" style="padding-top: 5px">
+        <div class="row" style="margin-left: 0px">
+          <div class="col-lg-2">
+            <figure>
+              <img
+                [src]="userImage ? userImage : 'https://api.realworld.io/images/demo-avatar.png'"
+                alt=""
+                style="height: 40px; width: 40px; border-radius: 50%"
+              />
+            </figure>
+          </div>
+          <div class="col-lg-10">
+            <div class="newpst-input" [routerLink]="['/new']">
+              <form method="post">
+                <textarea
+                  style="border: 1px solid #80808024; border-radius: 5px"
+                  rows="1"
+                  placeholder="Share some what you are thinking?"
+                ></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3" style="margin-left: -13px">
+        <div class="attachments" style="float: right">
+          <button
+            class="post-btn"
+            type="submit"
+            data-ripple=""
+            [routerLink]="['/new']"
+            
+          >
+            Creat Post
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="feed-toggle mt-2 central-meta item">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <button
+        class="nav-link"
+        [ngClass]="{ activeDanger: listConfig.type === 'feed' }"
+        (click)="setListTo('feed')"
+      >
+        <i class="fas fa-user-graduate"></i>
+        Your Feed
+      </button>
+    </li>
+    <li class="nav-item">
+      <button
+        class="nav-link"
+        [ngClass]="{
+          activeDanger: listConfig.type === 'all' && !listConfig.filters.tag
+        }"
+        (click)="setListTo('all')"
+      >
+        <i class="fas fa-globe-americas"></i>
+        Global Feed
+      </button>
+    </li>
+    <li
+      class="nav-item activeDanger"
+      style="border-radius: 3px"
+      [hidden]="!listConfig.filters.tag"
+    >
+      <button class="nav-link text-white">
+        <i class="fas fa-tag"></i>
+        <i class="ion-pound"></i> {{ listConfig.filters.tag }}
+      </button>
+    </li>
+  </ul>
+</div>
+
+<app-article-home-list></app-article-home-list>
