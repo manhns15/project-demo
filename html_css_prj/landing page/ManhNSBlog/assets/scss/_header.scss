@@ -1,0 +1,145 @@
+.blog {
+    &__heading {
+        position: relative;
+        background-image: url("../images/dot.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $bg-light;
+        height: 990px;
+    }
+    &__header {
+        z-index: 1;
+        background-color: $white;
+        padding: 26px 0;
+        position: fixed;
+        width: 100%;
+        &--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--logo {
+            & span:nth-child(1) {
+                color: #001858;
+                font-weight: 600;
+                font-size: 36px;
+            }
+            & span:nth-child(2) {
+                font-weight: 700;
+                font-size: 15px;
+                color: $primary;
+            }
+        }
+        &--menu {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 0 50px;
+                & li a {
+                    color: $text-color;
+                    font-weight: 700;
+                }
+                & li:nth-child(4) a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0 5px;
+                    i {
+                        font-size: 12px;
+                    }
+                }
+                & li:nth-child(5) a {
+                    color: $white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 10px 17px;
+                    gap: 10px;
+                    width: 213px;
+                    height: 44px;
+                    border-radius: 4px;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    &__started {
+        width: 1250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--left {
+            width: 664px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px 0;
+            & h1 {
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 81px;
+                text-transform: capitalize;
+            }
+        }
+        &--description {
+            padding: 0 12px;
+            border-left: 2px solid $text-color;
+            & span {
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 25px;
+                color: $dark-grey;
+            }
+        }
+        &--form {
+            display: flex;
+            align-items: center;
+            gap: 0 20px;
+            & input {
+                padding: 21px 200px 21px 25px;
+                gap: 10px;
+                width: 444px;
+                height: 67px;
+                background: $white;
+                border-radius: 8px;
+                border: none;
+                font-size: 16px;
+            }
+            & input::placeholder {
+                color: $grey;
+                font-weight: 400;
+            }
+            & button {
+                text-transform: capitalize;
+                padding: 20px 23px 19px;
+                gap: 10px;
+                width: 145px;
+                height: 67px;
+                background: $primary;
+                border-radius: 8px;
+                border: none;
+                color: $white;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        &--scroll {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $white;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}

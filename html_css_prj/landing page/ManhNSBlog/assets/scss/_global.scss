@@ -1,0 +1,15 @@
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+body {
+    background-color: $font;
+    color: $text-color;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}

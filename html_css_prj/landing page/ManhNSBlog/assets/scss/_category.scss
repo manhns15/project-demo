@@ -1,0 +1,43 @@
+.blog {
+    &__category {
+        background-color: $bg-light;
+        padding: 70px 0;
+        &--heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        &--card {
+            padding-top: 53px;
+            display: flex;
+            align-items: center;
+            gap: 0 37px;
+        }
+        &--card-item {
+            width: 220px;
+            height: 280px;
+            filter: drop-shadow(4px 6px 13px rgba(215, 215, 215, 0.25));
+            border-radius: 8px;
+            background: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px 0;
+            padding-left: 30px;
+            cursor: pointer;
+            &:hover {
+                color: $white;
+                background-color: $primary;
+            }
+        }
+        &--card-name {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            text-transform: capitalize;
+        }
+    }
+}
