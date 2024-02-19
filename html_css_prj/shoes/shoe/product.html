@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+  <title>Tất cả sản phẩm</title>
+
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo/nike_PNG18.png" class="logo-top" alt="">
+      </a>
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SẢN PHẨM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GIỚI THIỆU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 100%;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+          color: #272727;
+          text-transform: uppercase;
+          margin: 3px 0 30px 0;
+          font-weight: 500; letter-spacing: 2px;">MENU</h3>
+          <div class="justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Product.html">SẢN PHẨM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">LIÊN HỆ</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="icon-ol">
+        <a href="">
+          <i class="ti-search"></i>
+        </a>
+        <a href="#">
+          <i class="ti-heart"></i>
+        </a>
+
+        <a href="#">
+          <i class="ti-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <div class="breadcrumb-shop">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+          <ol class="breadcrumb breadcrumb-arrows">
+            <li>
+              <a href="#">
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li>
+              <span><span style="color: #777777">Tất cả sản phẩm</span></span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--List Prodct-->
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12 sidebar-fix">
+        <div class="wrap-filter">
+          <div class="box_sidebar">
+            <div class="block left-module">
+              <div class=" filter_xs">
+                <div class="group-menu">
+                  <div class="title_block d-block d-sm-none d-none d-sm-block d-md-none" data-toggle="collapse"
+                    href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                    Danh mục sản phẩm
+                    <span><i class="fa fa-angle-down" data-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample1"></i></span>
+                  </div>
+                  <div class="block_content layered-category collapse" id="collapseExample1">
+                    <div class="layered-content card card-body" style="border:0;padding:0">
+                      <ul class="menuList-links">
+                        <li class=""><a href="home.html" title="Trang chủ"><span>Trang chủ</span></a></li>
+                        <li class=" active "><a href="product.html" title="Bộ sưu tập"><span>Bộ sưu tập</span></a>
+                        </li>
+                        <li class=""><a href="introduce.html" title="Giới thiệu"><span>Giới thiệu</span></a></li>
+                        <li class=""><a href="blog.html" title="Blog"><span>Blog</span></a></li>
+                        <li class=""><a href="contact.html" title="Liên hệ"><span>Liên hệ</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="layered">
+                  <p class="title_block d-block d-sm-none d-none d-sm-block d-md-none" data-toggle="collapse"
+                    href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                    Bộ lọc sản phẩm
+                    <span><i class="fa fa-angle-down" data-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2"></i></span>
+                  </p>
+                  <div class="block_content collapse" id="collapseExample2">
+                    <div class="group-filter" aria-expanded="true">
+                      <div class="layered_subtitle dropdown-filter"><span>Giá sản phẩm</span><span
+                          class="icon-control"><i class="fa fa-minus"></i></span></div>
+                      <div class="layered-content bl-filter filter-price">
+                        <ul class="check-box-list">
+                          <li>
+                            <input type="checkbox" id="p1">
+                            <label for="p1">
+                              <span>Dưới</span> 500,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p2">
+                            <label for="p2">
+                              500,000₫ - 1,000,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p3">
+                            <label for="p3">
+                              1,000,000₫ - 1,500,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p4">
+                            <label for="p4">
+                              2,000,000₫ - 5,000,000₫
+                            </label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="p5">
+                            <label for="p5">
+                              <span>Trên</span> 5,000,000₫
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="group-filter" aria-expanded="true">
+                      <div class="layered_subtitle dropdown-filter"><span>Màu sắc</span><span class="icon-control"><i
+                            class="fa fa-minus"></i></span></div>
+                      <div class="layered-content filter-color s-filter">
+                        <ul class="check-box-list">
+                          <li>
+                            <input type="checkbox" id="data-color-p1">
+                            <label for="data-color-p1" style="background-color: #fb4727"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p2">
+                            <label for="data-color-p2" style="background-color: #fdfaef"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p3">
+                            <label for="data-color-p3" style="background-color: #3e3473"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p4">
+                            <label for="data-color-p4" style="background-color: #ffffff"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p5">
+                            <label for="data-color-p5" style="background-color: #75e2fb"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p6">
+                            <label for="data-color-p6" style="background-color: #cecec8"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p7">
+                            <label for="data-color-p7" style="background-color: #6daef4"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p8">
+                            <label for="data-color-p8" style="background-color: #000000"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p9">
+                            <label for="data-color-p9" style="background-color: #e2262a"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p10">
+                            <label for="data-color-p10" style="background-color: #ee8aa1"></label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="data-color-p11">
+                            <label for="data-color-p11" style="background-color: #4a5250"></label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="group-filter" aria-expanded="true">
+                      <div class="layered_subtitle dropdown-filter"><span>Kích thước</span><span class="icon-control"><i
+                            class="fa fa-minus"></i></span></div>
+                      <div class="layered-content filter-size s-filter">
+
+                        <ul class="check-box-list clearfix">
+
+                          <li>
+                            <input type="checkbox" id="data-size-p1">
+                            <label for="data-size-p1">35</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="data-size-p2">
+                            <label for="data-size-p2">36</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="data-size-p3">
+                            <label for="data-size-p3">37</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="data-size-p4">
+                            <label for="data-size-p4">38</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="data-size-p5">
+                            <label for="data-size-p5">39</label>
+                          </li>
+
+                          <li>
+                            <input type="checkbox" id="data-size-p6">
+                            <label for="data-size-p6">40</label>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        <div class="wrap-collection-title row">
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <h1 class="title">
+              Tất cả sản phẩm
+            </h1>
+            <div class="alert-no-filter"></div>
+          </div>
+          <div class="col-md-4 d-sm-none d-md-block d-none d-sm-block" style="float: left">
+            <div class="option browse-tags">
+              <span class="custom-dropdown custom-dropdown--grey">
+                <select class="sort-by custom-dropdown__select">
+                  <option value="price-ascending">Giá: Tăng dần</option>
+                  <option value="price-descending">Giá: Giảm dần
+                  </option>
+                </select>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/1-1.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/2-2.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/3-3.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/4-4.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/5-5.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/6-6.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/7-7.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/8-8.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/shoes fade 2.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/shoes fade 5.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+
+                  <img src="images/shoes/shoes fade 4.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+
+                  <img src="images/shoes/shoes fade 1.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+
+                  <img src="images/shoes/shoes fade 6.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+
+                  <img src="images/shoes/shoes fade 3.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+
+                  <img src="images/shoes/shoes fade 8.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+
+                  <img src="images/shoes/shoes fade 7.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/9-9.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/10-10.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/11-11.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+            <div class="product-block">
+              <div class="product-img fade-box">
+                <a href="#" title="Adidas EQT Cushion ADV" class="img-resize">
+                  <img src="images/shoes/12-12.jpg" alt="Adidas EQT Cushion ADV" class="lazyloaded">
+                </a>
+              </div>
+              <div class="product-detail clearfix">
+                <div class="pro-text">
+                  <a href="#" title="Adidas EQT Cushion ADV" inspiration pack>
+                    Adidas EQT Cushion ADV "North America"
+                  </a>
+                </div>
+                <div class="pro-price">
+                  <p class="">7,000,000₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sortpagibar pagi clearfix text-center">
+          <div id="pagination" class="clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <span class="page-node current">1</span>
+              <a class="page-node" href="">2</a>
+              <a class="next" href="">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 31 10" style="enable-background:new 0 0 31 10; width: 31px; height: 10px;"
+                  xml:space="preserve">
+                  <polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "></polygon>
+                </svg> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--gallery-->
+  <section class="section section-gallery">
+    <div class="">
+      <div class="hot_sp">
+        <h2 style="text-align:center;padding-top: 10px">
+          <a style="font-size: 28px;color: black;text-decoration: none" href="">Khách hàng và Runner Inn</a>
+        </h2>
+      </div>
+      <div class="list-gallery clearfix">
+        <ul class="shoes-gp">
+          <li>
+            <div class="gallery_item">
+              <img class="img-resize" src="images/shoes/gallery_item_1.jpg" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="gallery_item">
+              <img class="img-resize" src="images/shoes/gallery_item_2.jpg" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="gallery_item">
+              <img class="img-resize" src="images/shoes/gallery_item_3.jpg" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="gallery_item">
+              <img class="img-resize" src="images/shoes/gallery_item_4.jpg" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="gallery_item">
+              <img class="img-resize" src="images/shoes/gallery_item_5.jpg" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="gallery_item">
+              <img class="img-resize" src="images/shoes/gallery_item_6.jpg" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Giới thiệu
+              </h4>
+              <div class="footer-content">
+                <p>NIKE-SHOES Xin lưu ý rằng việc giao hàng hiện đang mất nhiều thời gian hơn bình thường. Để kiểm tra
+                  trạng thái của đơn đặt hàng, vui lòng truy cập trang đơn đặt hàng của bạn. Cảm ơn vì sự kiên nhẫn
+                  của bạn. </p>
+                <div class="logo-footer">
+                  <img src="images/logo/logo.png" alt="">
+                </div>
+                <div class="social-list">
+                  <a href="#" class="ti-facebook"></a>
+                  <a href="#" class="ti-google"></a>
+                  <a href="#" class="ti-twitter"></a>
+                  <a href="#" class="ti-youtube"></a>
+                  <a href="#" class="ti-skype"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="footer-col footer-link">
+              <h4 class="footer-title">
+                PHÁP LÝ &amp; CÂU HỎI
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li class="item">
+                    <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Thông tin liên hệ
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li><span>Địa chỉ:</span> Phố Lê Bồi, Lam Sơn, Thọ Xuân, Thanh Hóa, Vietnam</li>
+                  <li><span>Điện thoại:</span> +84 (028) 38800659</li>
+                  <li><span>Fax:</span> +84 (028) 38800659</li>
+                  <li><span>Mail:</span> nikeshoes@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer--copyright">
+      <div class="container">
+        <hr>
+        <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2021 <a href="https://runner-inn.myharavan.com"> Nike Shoes</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+  <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="plugins/bootstrap/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+  <script src="plugins/uikit/uikit.min.js"></script>
+  <script src="plugins/uikit/uikit-icons.min.js"></script>
+</body>
+
+</html>
